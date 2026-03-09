@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #1d3161;
     padding: 1rem 2rem; /* Reduzi o padding vertical */
     display: flex;
     align-items: center; /* Alinha a logo e o título verticalmente */
@@ -32,7 +32,7 @@ header {
 }
 
 h1 {
-    color: #1a5a6e; /* Tom aproximado do verde da logo */
+    color: #ffffff; /* Tom aproximado do verde da logo */
     font-size: 1.2rem; /* Título menor para equilibrar */
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -60,7 +60,7 @@ h1 {
 
 .square-btn {
     background-color: #1d3161; /* Azul escuro da logo */
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
