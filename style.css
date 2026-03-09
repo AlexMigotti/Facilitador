@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem; /* Reduzi o padding vertical */
+    display: flex;
+    align-items: center; /* Alinha a logo e o título verticalmente */
+    justify-content: space-between; /* Coloca a logo à esquerda e o título à direita */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    flex: 0 0 auto; /* Impede que o container da logo estique */
+}
+
+.logo {
+    max-width: 150px; /* Logo bem menor */
+    height: auto;
+}
+
+h1 {
+    color: #1a5a6e; /* Tom aproximado do verde da logo */
+    font-size: 1.2rem; /* Título menor para equilibrar */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1; /* Faz o título ocupar o espaço restante */
+    text-align: right; /* Alinha o título à direita */
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem; /* Mais espaçamento vertical na área principal */
+}
+
+.grid-links {
+    display: grid;
+    /* Define uma grade com colunas de tamanho fixo para criar quadrados */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; /* Mais espaço entre os botões */
+    width: 100%;
+    max-width: 1000px; /* Aumentei um pouco a largura máxima */
+    justify-items: center; /* Centraliza os botões dentro de suas células */
+}
+
+.square-btn {
+    background-color: #1d3161; /* Azul escuro da logo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    
+    /* Criação do formato quadrado */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px; /* Cantos levemente arredondados, mas ainda quadrado */
+}
+
+.square-btn span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.square-btn:hover {
+    background-color: #2a478a;
+    transform: translateY(-5px) scale(1.03); /* Efeito de flutuação e zoom leve */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.square-btn:active {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    color: #777;
+    background-color: #fff; /* Adicionei fundo branco no footer */
+    border-top: 1px solid #eee;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    h1 {
+        text-align: left;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .grid-links {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .square-btn {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .square-btn span {
+        font-size: 0.9rem;
+    }
+}
