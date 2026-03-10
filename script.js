@@ -4,7 +4,12 @@ const links = {
     'prosas': 'https://prosas.com.br/editais',
     'captadores': 'https://captadores.org.br/noticias/#editais',
     'mrv': 'https://institutomrv.com.br/',
-    'tjmg': 'https://www.tjmg.jus.br/portal-tjmg/processos/prestacao-pecuniaria/'
+    'tjmg': 'https://www.tjmg.jus.br/portal-tjmg/processos/prestacao-pecuniaria/',
+    'gife': 'https://gife.org.br/editais/',
+    'observatorio': 'https://observatorio3setor.org.br/',
+    'capta': 'https://capta.org.br/fontes-de-financiamento/oportunidades/',
+    'Mapa': 'https://mapaosc.ipea.gov.br/',
+    'planilha': 'https://hbaleia.sharepoint.com/:x:/s/MobilizaodeRecursos/IQBkTiOOzVnvTJKfV0YjfjF8AfLXD7qiIv7uiL34gvrSE6g?e=KzFolN'
 };
 
 function openLink(key) {
