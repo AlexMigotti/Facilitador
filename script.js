@@ -10,7 +10,8 @@ const links = {
     'capta': 'https://capta.org.br/fontes-de-financiamento/oportunidades/',
     'Mapa': 'https://mapaosc.ipea.gov.br/',
     'planilha': 'https://hbaleia.sharepoint.com/:x:/s/MobilizaodeRecursos/IQBkTiOOzVnvTJKfV0YjfjF8AfLXD7qiIv7uiL34gvrSE6g?e=KzFolN',
-    'portal': 'https://script.google.com/macros/s/AKfycbzH3h_bpZ5HEzD1ZBjzb285pddn3-r5TpE0kor7ZxQWaDRGR_VxeftH-_ANPOy241egCw/exec'
+    'portal': 'https://script.google.com/macros/s/AKfycbzH3h_bpZ5HEzD1ZBjzb285pddn3-r5TpE0kor7ZxQWaDRGR_VxeftH-_ANPOy241egCw/exec',
+    'BI': 'https://app.powerbi.com/reportEmbed?reportId=ef543ef2-7ca8-45f2-b42c-60467e34f6df&autoAuth=true&ctid=36378e8b-dd3a-4df4-888a-558ad821187b'
 };
 
 function openLink(key) {
